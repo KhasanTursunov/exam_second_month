@@ -1,0 +1,80 @@
+.work_cards{
+    display: flex;
+    gap: 10px;
+}
+
+.work{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.work_title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.work_card{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+}
+.work_card img{
+    width: 100%;
+}
+
+.work_card:hover{
+        box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    border-radius: 20px;
+}
+
+.work_title h2{
+    font-family: font;
+font-weight: 600;
+font-size: 48px;
+color: $black;
+}
+
+.work_title p{
+font-weight: 400;
+font-size: 16px;
+color: $gray;
+}
+
+.work_card h3{
+    font-family: font;
+font-weight: 600;
+font-size: 20px;
+line-height: 135%;
+color: $black;
+}
+
+.work_card p{
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: $gray;
+width: 70%;
+}
+
+@media(max-width:768px){
+    .work_cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+}
+
+@media(max-width:400px){
+    .work_title h2{
+    font-family: font;
+font-weight: 600;
+font-size: 36px;
+color: $black;
+}
+}
