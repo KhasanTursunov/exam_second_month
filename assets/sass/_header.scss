@@ -1,23 +1,65 @@
-.navbar{
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_links ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar_links ul li {
+  list-style: none;
+}
+
+.navbar_links ul li a {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: $black;
+  font-family: $font;
+}
+.menu_bar_div {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .menubar, .x_mark {
+    font-size: 25px;
+    display: none;
+  }
+}
+.checkbox {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .navbar_links .ul_links {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.8s linear;
+    z-index: 999;
+  }
+  .menubar {
+    font-size: 25px;
+  }
+
+  #check:checked ~ .ul_links {
+    left: 0;
+  }
+  .menu_bar_div {
+    display: block;
+  }
+  .navbar {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-
-.navbar_links ul{
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.navbar_links ul li{
-    list-style: none;
-}
-
-.navbar_links ul li a{
-font-size: 20px;
-font-weight: 600;
-line-height: 25px;
-color: $black;
-font-family: $font;
+  }
 }
