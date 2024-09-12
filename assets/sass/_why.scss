@@ -1,0 +1,94 @@
+.why_image img{
+    width: 100%;
+}
+.why_image{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+.why_div_for_text{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.why_div_for_text h3{
+    font-family: $font;
+    font-weight: 600;
+    font-size: 20px;
+    color: $black;
+}
+
+.why_div_for_text p{
+font-weight: 400;
+font-size: 16px;
+color: $gray;
+width: 60%;
+}
+
+.why_card{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.why_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 40px;
+}
+
+
+@media(max-width:768px){
+.why_cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+    .why_card{
+        display: flex;
+    }
+
+
+.why_div_for_text p{
+font-weight: 400;
+font-size: 16px;
+color: $gray;
+width: 90%;
+}
+}
+
+@media(max-width:400px){
+        .why_card{
+        display: flex;
+        flex-direction: column;
+        // text-align: center;
+    }
+}
+
+.why_image h3{
+    font-family: $font;
+font-weight: 600;
+font-size: 28px;
+line-height: 125%;
+color: $black;
+}
+
+@media(max-width:400px){
+    .why_image img{
+        display: none;
+    }
+}
+@media(min-width:401px){
+    .why_image h3{
+        display: none;
+    }
+}
+
+.why_card:hover{
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.12);
+background: #fff;
+border-radius: 20px;
+}
