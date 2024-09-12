@@ -35,3 +35,29 @@ color: $black;
     flex-direction: column;
     gap: 30px;
 }
+
+.showcase_right{
+    width: 100%;
+}
+.showcase_right img{
+    width: 100%;
+}
+
+@media(max-width:800px){
+    .showcase_left_and_right{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+
+@media(max-width:800px){
+.showcase_left h1{
+    font-family: $font;
+    color: $black;
+font-size: 42px;
+font-weight: 600;
+line-height: 55px;
+
+}
+}

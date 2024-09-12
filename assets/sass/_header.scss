@@ -63,3 +63,14 @@
     justify-content: space-between;
   }
 }
+
+@media(max-width: 400px){
+    .navbar_logo img{
+        width: 80%;
+    }
+}
+@media(max-width: 300px){
+    .navbar_logo img{
+        width: 70%;
+    }
+}
