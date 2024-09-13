@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -420,7 +421,134 @@
       </section>
 
 
+      <!-- end of stages -->
+
+      <section class="trust">
+        <div class="container">
+          <div class="trust_title">
+            <h2>Нам доверяют</h2>
+          </div>
+
+          <div class="trust_cards">
+
+
+             <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="trust_card">
+              <img src="./svg/trust1.svg" alt="">
+              <h3>Росатом</h3>
+              <p>Корпорация атомной энергии</p>
+            </div>
+      </div>
+
+      <div class="swiper-slide">
+         <div class="trust_card">
+              <img src="./svg/trust2.svg" alt="">
+              <h3>Газпром</h3>
+              <p>Энергетическая компания</p>
+            </div>
+      </div>
+      <div class="swiper-slide">
+         <div class="trust_card">
+              <img src="./svg/trust3.svg" alt="">
+              <h3>Роснефть</h3>
+              <p>Нефтегазовая компания</p>
+            </div>
+      </div>
+
+      <div class="swiper-slide">
+         <div class="trust_card">
+              <img src="./svg/trust4.svg" alt="">
+              <h3>Роскосмос</h3>
+              <p>Корпорация атомной энергии</p>
+            </div>
+      </div>
+
+      <div class="swiper-slide">
+         <div class="trust_card">
+              <img src="./svg/trust7.svg" alt="">
+              <h3>Лукойл</h3>
+              <p>Нефтяная компания</p>
+            </div>
+      </div>
+
+      <div class="swiper-slide">
+         <div class="trust_card">
+              <img src="./svg/trust6.svg" alt="">
+              <h3>Интер РАО</h3>
+              <p> Энергетическая компания</p>
+            </div>
+      </div>
+
+      <div class="swiper-slide">
+         <div class="trust_card">
+              <img src="./svg/trust3.svg" alt="">
+              <h3>Ростех</h3>
+              <p>Промышленная корпорация</p>
+            </div>
+      </div>
+
+      <div class="swiper-slide">
+         <div class="trust_card">
+              <img src="./svg/trust8.svg" alt="">
+              <h3>Банк ВТБ</h3>
+              <p>Коммерческий</p>
+            </div>
+      </div>
+
+      
+    </div>
+    <!-- <div class="swiper-pagination"></div> -->
+  </div>
+
+
+            
+
+
+          </div>
+
+        </div>
+      </section>
+
+
+
     </main>
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+
 
   </body>
 </html>
