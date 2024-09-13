@@ -12,7 +12,6 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 30px;
-  border: 1px solid red;
 }
 
 a {
@@ -437,6 +436,7 @@ link {
 .table {
   background-color: #0B7572;
   width: 100%;
+  padding: 30px;
 }
 
 .table_right {
@@ -602,6 +602,104 @@ link {
 }
 .table_first_div {
   width: 100%;
+}
+
+.stages {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.stages_title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.stages_title h2 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
+  color: #363738;
+}
+
+.stage_inside_text h3 {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  color: #363738;
+  margin-left: 30px;
+}
+
+.stage_inside_text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6B6B6C;
+  width: 55%;
+  margin-left: 30px;
+}
+
+.stage_inside_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stages_card {
+  display: flex;
+  gap: 20px;
+  padding: 30px 0 30px 100px;
+  justify-content: center;
+  margin-left: 30px;
+  transition: 0.3s;
+}
+
+.stages_card:hover {
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .stage_inside_text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6B6B6C;
+    width: 80%;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 938px) {
+  .stage_inside_img {
+    display: none;
+  }
+  .stages_card {
+    display: flex;
+    gap: 20px;
+    padding: 30px 0 30px 10px;
+    justify-content: center;
+    margin-left: 30px;
+  }
+  .stage_inside_text h3 {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 125%;
+    color: #363738;
+    margin-left: 10px;
+  }
+  .stage_inside_text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #6B6B6C;
+    width: 90%;
+    margin-left: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

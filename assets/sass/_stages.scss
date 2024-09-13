@@ -1,0 +1,98 @@
+.stages {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.stages_title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.stages_title h2 {
+  font-family: $font;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
+  color: $black;
+}
+
+.stage_inside_text h3 {
+  font-family: $font;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+  color: $black;
+  margin-left: 30px;
+}
+
+.stage_inside_text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $gray;
+  width: 55%;
+  margin-left: 30px;
+}
+
+.stage_inside_text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stages_card {
+  display: flex;
+  gap: 20px;
+  padding: 30px 0 30px 100px;
+  justify-content: center;
+  margin-left: 30px;
+  transition: 0.3s;
+}
+
+.stages_card:hover {
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  .stage_inside_text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray;
+    width: 80%;
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 938px) {
+  .stage_inside_img {
+    display: none;
+  }
+  .stages_card {
+    display: flex;
+    gap: 20px;
+    padding: 30px 0 30px 10px;
+    justify-content: center;
+    margin-left: 30px;
+  }
+
+  .stage_inside_text h3 {
+    font-family: $font;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 125%;
+    color: $black;
+    margin-left: 10px;
+  }
+
+  .stage_inside_text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gray;
+    width: 90%;
+    margin-left: 10px;
+  }
+}
